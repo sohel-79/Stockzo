@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+header {
+    background-color: white;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid black;
+}
+
+.navbar a.active {
+    border-bottom: 3px solid black;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.nav-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.btn2{ 
+    background-color: grey;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px ;
+    border-color: grey;
+}
+
+
+#content {
+    width: 100%;
+    word-wrap: break-word;
+    margin-right: 40PX;
+    
+}
+
+img{
+    width: 60%;
+    height: auto;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    word-wrap: break-word;
+    width: 25vw;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.container2{
+    background-color: black;
+    color: white;
+}
+
+.container3{
+    background-color: gainsboro;
+    color: black;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team{
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        Left: -100%;
+        top: 70px;
+        gap: 8px;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid black;
+    }
+
+    .nav-menu.active {
+        Left: 0;
+    }
+
+    .social {
+        display: none;
+    }
+}
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+    img{
+       display: none;
+    }
+
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+
+
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    #content {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 600px) {
+    #primary {
+        width: 100%;
+    }
+
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    #content {
+        width: 100%;
+        margin-left: 7px;
+    }
+
+    img {
+        display: none;
+    }
+
+    
+.card-container{
+    display: block;
+}
+
+.container{
+    word-wrap: break-word;
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.profile{
+    display: none;
+}
+
+.profile-container{
+    display: none
+}
+.team{
+    display: none;
+}
+
+}
